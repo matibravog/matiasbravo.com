@@ -23,9 +23,8 @@ main{
     height: auto;
 }
 .container{
-    position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 90%;
     height: auto;
     margin-bottom: 50px;
@@ -68,26 +67,4 @@ main{
     width: 100%;
     height: 25vh;
     margin: 20px 0;
-}
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    border-top: 1px solid white;
-    background: rgb(5, 5, 5);
-}
-.footer-title{
-    font-size: 2rem;
-}
-.social-media{
-    margin: 10px;
-}
-.rrss{
-    width: 40px;
-    margin: 0 5px;
-    cursor: pointer;
-}
-footer .rights{
-    font-size: 1rem;
 }

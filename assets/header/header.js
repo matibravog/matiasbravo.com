@@ -27,10 +27,3 @@ botonHeader.onclick = () => {
         }
     })
 }
-
-//fotos
-const fotosButton = document.querySelector('.fotos-button')
-const fotosContainer = document.querySelector('.fotos-container')
-fotosButton.onclick = () => {
-    fotosContainer.classList.toggle('inactive')
-}

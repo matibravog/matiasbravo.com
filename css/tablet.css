@@ -1,0 +1,97 @@
+.container.fotos{
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(2, 50%);
+    grid-template-areas: 
+    "title image"
+    "description image"
+    "button image";
+    margin-top: 50px;
+}
+.container-title{
+    position: relative;
+    grid-area: title;
+    font-size: 4rem;
+}
+
+.container-description{
+    position: relative;
+    top: -110px;
+    grid-area: description;
+    width: 100%;
+    font-size: 2.5rem;
+}
+.container-button{
+    position: relative;
+    top: -200px;
+    grid-area: button;
+    margin: 0;
+}
+.container-image{
+    grid-area: image;
+    width: 100%;
+}
+
+
+.container.av{
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(2, 50%);
+    grid-template-areas: 
+    "image title"
+    "image description"
+    "image button";
+    margin-top: 50px;
+}
+.av .container-title{
+    text-align: end;
+}
+.av .container-description{
+    text-align: end;
+    justify-self: flex-end;
+    top: -50px;
+    width: 95%;
+}
+.av .container-button{
+    justify-self: flex-end;
+    top: -90px;
+}
+
+.container.web{
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(2, 50%);
+    grid-template-areas: 
+    "title image"
+    "description image"
+    "button image";
+    margin-top: 50px;
+}
+.web .container-button{
+    position: relative;
+    top: -100px;
+    grid-area: button;
+    margin: 0;
+}
+
+
+.youtube{
+    align-items: center;
+}
+.youtube-box{
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 50%);
+    width: 100%;
+}
+.youtube .box{
+    margin: 0 20px;
+}
+.youtube .container-description{
+    font-size: 1.5rem;
+    top: 0px;
+}
+.youtube .container-button{
+    top: 15px;
+}
+
+.container-video{
+    grid-area: video;
+    width: 100%;
+}

@@ -1,16 +1,75 @@
-.ocultar-main{
-    opacity: 0.6;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    scroll-behavior: smooth;
+    font-size: 1.6rem;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(100px);
+    width: 100vw;
+    height: auto;
 }
 .container{
     display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.container-title{
+    font-size: 3rem;
+    margin: 20px 0 0 ;
+}
+.container-description{
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+.container-subtitle{
+    font-size: 2rem;
+    margin: 15px 0;
+}
+.container-image{
+    border-radius: 10px;
+    width: 100%;
+}
+@media (min-width: 1080px){
+    .container-image{
+        width: 50%;
+    }
+}
+.container-button{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    width: 90vw;
-    margin-top: 50px;
+    align-items: center;
+    margin: 20px auto;
+    width: 150px;
+    height: 40px;
+}
+.container-video{
+    width: 100%;
+    height: 25vh;
+    margin: 20px 0;
 }
 .galeria{
     margin: 1%;
-    width: 48%;
 }
 img{
     width: 100%;

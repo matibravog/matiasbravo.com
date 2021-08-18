@@ -1,0 +1,48 @@
+main{
+    width: 80vw;
+    margin: 0 auto;
+
+}
+.container{
+    margin-bottom: 100px;
+}
+.container-image{
+    justify-self: flex-end;
+    grid-area: image;
+    width: 65%;
+}
+.container-button{
+    transition: 200ms;
+}
+.container-button:hover{
+    background-color: rgb(0, 143, 179);
+}
+
+
+.container-title{
+    font-size: 5rem;
+}
+.container-description{
+    font-size: 3rem;
+    top: -100px;
+}
+.container-button{
+    top: -200px;
+}
+
+.web .container-button{
+    top: -200px;
+}
+
+
+.av .container-image{
+    justify-self: flex-start;
+    grid-area: image;
+    width: 65%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    border-top: 1px solid white;
+}

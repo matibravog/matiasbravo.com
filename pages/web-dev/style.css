@@ -1,0 +1,17 @@
+.ocultar-main{
+    opacity: 0.6;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin-top: 50px;
+}
+.galeria{
+    margin: 1%;
+    width: 48%;
+}
+img{
+    width: 100%;
+}
