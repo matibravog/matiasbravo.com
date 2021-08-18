@@ -9,7 +9,7 @@ main{
 .container-image{
     justify-self: flex-end;
     grid-area: image;
-    width: 65%;
+    width: 70%;
 }
 .container-button{
     transition: 200ms;
@@ -20,18 +20,21 @@ main{
 
 
 .container-title{
-    font-size: 5rem;
+    font-size: 5.1rem;
 }
-.container-description{
+.fotos .container-description{
     font-size: 3rem;
-    top: -100px;
+    top: -88px;
 }
-.container-button{
-    top: -200px;
+.fotos .container-button{
+    top: -160px;
 }
 
+.web .container-description{
+    top: -70px;
+}
 .web .container-button{
-    top: -200px;
+    top: -120px;
 }
 
 

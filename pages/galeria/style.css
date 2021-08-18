@@ -46,6 +46,20 @@ main{
     border-radius: 10px;
     width: 100%;
 }
+@media (min-width: 700px){
+    .container{
+        flex-direction: column;
+    }
+    .galeria{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .galeria img{
+        width: auto;
+        height: 35vh;
+    }
+}
 @media (min-width: 1080px){
     .container-image{
         width: 50%;
@@ -68,6 +82,7 @@ main{
     height: 25vh;
     margin: 20px 0;
 }
+
 .galeria{
     margin: 1%;
 }
