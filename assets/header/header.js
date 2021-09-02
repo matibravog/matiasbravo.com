@@ -19,11 +19,5 @@ botonHeader.onclick = () => {
     main.classList.toggle('ocultar-main')
     menuLines()
 
-    main.addEventListener('click', () => {
-        menuMobile.classList.remove('menu-active')
-        main.classList.remove('ocultar-main')
-        if(lineA.classList.contains('rotatea')){
-            menuLines()
-        }
-    })
+
 }

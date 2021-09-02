@@ -7,6 +7,7 @@
     z-index: 2;
     color: black;
     background-color: white;
+    overflow-x: hidden;
 }
 .header-logo{
     padding-left: 20px;
@@ -62,7 +63,7 @@
 .menu-mobile{
     position: fixed;
     top: 0;
-    left: 102vw;
+    left: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,8 +103,8 @@
         position: relative;
         flex-direction: row;
         justify-content: flex-end;
-        left: 0;
-        padding-right: 12%;
+        left: -10vw;
+        /* padding-right: 12%; */
         width: auto;
         height: 100px;
         background: none;

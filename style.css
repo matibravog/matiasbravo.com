@@ -13,24 +13,39 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: black;
 }
-
 main{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(100px);
-    width: 100vw;
-    height: auto;
+    overflow-x: hidden;
 }
-.container{
-    position: relative;
+.background{
+    position: absolute;
+    width: 100%;
+}
+.content{
+    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    align-items: center;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    transform: translateY(100px);
+}
+.container{
+    display: grid;
+    grid-template: repeat(4, auto) / 100%;
+    grid-template-areas: 
+    "title"
+    "description"
+    "image"
+    "button";
+    width: 90vw;
     height: auto;
     margin-bottom: 50px;
 }
-
 .container-title{
     font-size: 3rem;
     margin: 20px 0 0 ;
@@ -53,6 +68,7 @@ main{
     }
 }
 .container-button{
+    grid-area: button;
     text-decoration: none;
     color: white;
     border: 1px solid white;
@@ -60,12 +76,51 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
+    margin: 50px auto;
     width: 150px;
     height: 40px;
+}
+.youtube{
+    margin-bottom: 200px;
+}
+.youtube-box{
+    transform: translateY(50px);
 }
 .container-video{
     width: 100%;
     height: 25vh;
-    margin: 20px 0;
+    padding: 20px 0;
+}
+@media(min-width: 600px){
+    .container-video{
+        height: 50vh;
+    }
+}
+@media(min-width: 1080px){
+    .container-video{
+        height: 75vh;
+    }
+}
+.light{
+    width: 20px;
+    height: 20px;
+}
+.blue{
+    position: relative;
+    top: 100vh;
+    background-color: rgb(126, 180, 224);
+    box-shadow: 0 0 100px 100px rgb(126, 180, 224) , 0 0 300px 300px rgb(0, 103, 187);
+}
+.red{
+    position: relative;
+    top: 225vh;
+    /* left: 100vw; */
+    background-color: rgb(207, 125, 125);
+    box-shadow: 0 0 100px 100px rgb(207, 125, 125), 0 0 300px 300px rgb(219, 0, 0);
+}
+.green{
+    position: relative;
+    top: 350vh;
+    background-color: rgb(148, 122, 165);
+    box-shadow: 0 0 100px 100px rgb(148, 122, 165), 0 0 300px 300px rgb(132, 0, 209);
 }

@@ -1,7 +1,5 @@
 main{
-    width: 80vw;
-    margin: 0 auto;
-
+    overflow-x: hidden;
 }
 .container{
     margin-bottom: 100px;
@@ -9,7 +7,7 @@ main{
 .container-image{
     justify-self: flex-end;
     grid-area: image;
-    width: 70%;
+    width: 50%;
 }
 .container-button{
     transition: 200ms;
@@ -43,6 +41,7 @@ main{
     grid-area: image;
     width: 65%;
 }
+
 footer{
     display: flex;
     justify-content: center;
